@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to Government</title>
+	<link rel ="stylesheet" href="Styles/home.css" type = "text/css">
+	<script type = "text/javascript">
+		var images = new Array()
+images[0] = "images/aadhar4.jpg";
+images[1] = "images/aadhar2.jpg";
+images[2] = "images/aadhar3.jpg";
+images[3] = "images/metro5.jpg";
+images[4] = "images/metro6.jpg";
+images[5] = "images/metro8.jpg";
+images[6] = "images/metro9.jpg";
+images[7] = "images/metro10.jpg";
+setInterval("changeImage()", 3000);
+var x=0;
+
+function changeImage()
+{
+if(x > images.length){
+	x = 0;
+}
+document.getElementById("img").src=images[x]
+x++;
+}
+
+</script>
+	
+<script>
+	history.pushState(null,null,document.title);
+window.addEventListener('popstate',function(){
+	history.pushState(null,null,document.title);
+});
+</script>
+
+</head>
+<body style ="height : 880px">
+	<div class = "MainBox" style = "height : 850px"> 
+		<div class = "TopBox" style = " height : 200px">
+			<div class = "LoginBox">	
+			<div style ="height : 100px; width : 100px; display : inline; margin-left :420px">
+				<img src ="images/login.png" height = "50px" width = "50px">&emsp;&emsp;&emsp;<img src ="images/register.png" height = "50px" width = "50px"> <br>
+				<form style = "display : inline; margin-left : 420px" name = "Signin" action = "scripts/UserLoginRegistration.php" method = "post">
+					
+					<input type ="submit" name ="SignIn" value ="Sign In">
+				</form>&emsp;&emsp;
+					<form style ="display : inline" name ="SignUp" action ="scripts/UserAccountRegistration.php" method ="post">
+						
+						<input type ="submit" name = "SignUp" value = "Register">
+					</form>
+				</div>
+			</div>
+			<div class = "Logo">
+				<img src = "images/emblem1.jpg" alt = "EMBLEM" height = "150" width = "100">
+			</div>			
+			<div class = "Title">
+				<h1> GOVERNMENT <br> OF INDIA</h1>
+				<iframe style="overflow:hidden;border:0;margin:0;padding:0;width:205px;height:25px;float:right" src="http://www.clocktag.com/html5/dt191a.html"></iframe>
+			</div>
+		</div>
+		<div id = "placeholderdiv" style = "height : 570px; width : 1200px; margin-left : 0px; border-radius : 20px">
+			<img style = "border : 5px solid #591434" id = "img" src = "images/home11.jpg" height = "500px" width  ="1192px">
+		</div>
+	<footer>
+		<center> <p style ="font-size : 15px"> <b> Copyright &copy; 2017 Venkata Rathnam Muralidharan </b> </p> </center>
+	</footer>
+	</div>
+	
+	</body>
+</html>

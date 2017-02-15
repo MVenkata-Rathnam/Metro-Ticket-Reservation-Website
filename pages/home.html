@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to Government</title>
+	<link rel ="stylesheet" href="../Styles/home.css" type = "text/css">
+	<script type = "text/javascript">
+
+history.pushState(null,null,document.title);
+window.addEventListener('popstate',function(){
+	history.pushState(null,null,document.title);
+});
+	
+var images = new Array()
+var x=0;
+images[0] = "../images/digital_india2.jpg";
+images[1] = "../images/digital_india3.jpg";
+images[2] = "../images/digital_india4.jpg";
+images[3] = "../images/digital_india5.jpg";
+images[4] = "../images/digital_india6.jpg";
+images[5] = "../images/home6.jpg";
+images[6] = "../images/home4.jpg";
+setInterval("changeImage()", 10000);
+function changeImage()
+{
+document.getElementById("img").src=images[x]
+x++;
+	if(x > images.length){
+		x = 0;
+	}
+}
+</script>
+</head>
+<body>
+	<div class = "MainBox">
+		<div class = "TopBox">
+			<div class = "LoginBox">
+				<a href ="../index.html"> <img style ="margin-left : 380px" src = "../images/logout.png" height = "50px" width = "50px">Sign Out</a>
+			</div>
+			
+			<div class = "Logo">
+				<img src = "../images/emblem1.jpg" alt = "EMBLEM" height = "150" width = "100">
+			</div>			
+			<div class = "Title">
+				<h1> GOVERNMENT <br> OF INDIA</h1>
+				<iframe style="overflow:hidden;border:0;margin:0;padding:0;width:205px;height:25px;float:right" src="http://www.clocktag.com/html5/dt191a.html"></iframe>
+			</div>
+			<div id="topnav">
+				<ul>     
+					<li class ="active"><a href="home.html">Home</a></li>
+					<li><a href="MetroTicketBooking.html">Metro Ticket Booking</a>
+					</li>
+					<li><a href="../scripts/BankAccountDetails.php">Bank Account Details</a>
+					</li>
+					<li><a href="ContactUs.html">Contact Us</a>
+					</li>
+					<li><a href="feedback.html">Feedback</a>
+					</li>
+					<li class ="last"><a href ="AboutUs.html">About Us</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id = "placeholderdiv">
+			<img style = "border : 5px solid #591434" id = "img" src = "../images/digital_india1.jpg" height = "300px" width  ="900px">
+		</div>
+	<div class = "Intro">
+		<p> <h1  style = " margin-left: 30px;text-align : justify"> What is Digital India ? </h1> </p>
+		
+		<p style = " margin-left: 30px;text-align : justify;width : 1100px; font-size : 20px"> Digital India is a Programme to prepare India for a knowledge future. Digital India is an ambitious programme of Government of India projected at Rs 1,13,000 crores. This will be for preparing the India for the knowledge based transformation and delivering good governance to citizens by synchronized and co-ordinated engagement with both Central Government and State Government. The Digital India vision provides the intensified impetus for further momentum and progress for e-Governance and would promote inclusive growth that covers electronic services, products, devices, manufacturing and job opportunities.</p>
+	</div>
+	
+	<div class = "Points">
+		<p> <h1 style = "text-align : justify"> Digital India Initiatives </h1> </p>
+
+		<div id = "Frame1">
+		
+			<P> <B>WIFI-HOTSPOTS </B> </P>
+			
+			<p > <center> <img style = "border-style : solid; border-width : 2px " src = "../images/home9.jpg" height = "175px" width = "200px"> </center> </p>
+			
+			<p style = "text-align :justify; font-size : 20px">
+					Development of high speed BSNL wi-fi hotspots throughout the country is yet another initiative to improve digital connectivity in the country.
+			</p>
+		</div>
+		<div id = "Frame1" style = "margin-left : 30px">
+		
+			<P> <B>BHARAT NET</B> </P>
+			
+			<p > <center> <img style = "border-style : solid; border-width : 2px " src = "../images/home8.jpg" height = "175px" width = "200px"> </center> </p>
+			
+			<p style = "text-align :justify; font-size : 20px">
+					Under this initiative, a high-speed digital highway will connect all 250,000 gram panchayats of the country. This is the world’s largest rural broadband project using optical fibre.
+			</p>
+		</div>
+
+		<div id = "Frame1" style = "margin-left : 30px">
+		
+			<P> <B>e-SIGN FRAMEWORK</B> </P>
+			
+			<p > <center> <img style = "border-style : solid; border-width : 2px " src = "../images/home3.jpg" height = "175px" width = "200px"> </center> </p>
+			
+			<p style = "text-align :justify; font-size : 20px">
+				This initiative would enable users to digitally sign a document online using Aadhaar authentication.
+			</p>
+		</div>
+
+		<div id = "Frame1" style = "margin-left : 30px">
+		
+			<P> <B>NATIONAL SCHOLARSHIP PORTAL</B> </P>
+			
+			<p > <center> <img style = "border-style : solid; border-width : 2px " src = "../images/home5.jpg" height = "175px" width = "200px"> </center> </p>
+			
+			<p style = "text-align :justify; font-size : 20px">
+					This initiative aims at making the Government scholarship process easy from submitting the application, verification, sanction and disbursal to end beneficiary.
+			</p>
+		</div>
+	</div>
+	<div class = "endSection">
+		
+		<div id = "quickLinks">
+		
+			<p style = "font-size : 30px"> Services </p>
+			<hr>
+			<p><a href = "home.html">Home</a></p>
+			<p><a href = "MetroTicketBooking.html">Chennai Metro </a><br></p>
+			<p><a href = "DelhiMetro.html">Delhi Metro</a><br></p>
+			<p><a href = "KolkataMetro.html">Kolkata Metro</a><br></p>
+			<p><a href = "feedback.html">Feedback</a><br></p>
+		</div>
+		
+		<div id ="AboutUs">
+			<p style = "font-size : 30px"> About this site </p>
+			<hr>
+			<p style = "text-align : justify">
+				This site is developed in order to provide an easy and stable governance to general people.  This site makes it easy for the people to book tickets for transport by means of rail and also do bank to bank transactions securely.
+			</p>
+			
+		</div>
+		
+		<div id = "StayInTouch">
+			
+			<p style = "font-size : 30px"> Stay in Touch </p>
+			<hr>
+			<a href = "www.facebook.com"> <img style = "height : 40px; width : 40px" src = "../images/facebook.gif"> </a>
+			<a href = "www.youtube.com"> <img style = "margin-left : 20px; height : 40px; width : 40px" src = "../images/youtube.gif"> </a>
+			<a href = "www.twitter.com"> <img style = "margin-left : 20px; height : 40px; width : 40px" src = "../images/twitter.gif"> </a>
+			<a href = "www.rss.com"> <img style = "margin-left : 20px; height : 40px; width : 40px" src = "../images/rss.gif"> </a>
+			<a href = "www.flickr.com" > <img style = "margin-left : 20px; height : 40px; width : 40px" src = "../images/flickr.gif"> </a>
+			
+			<br><br>
+			
+			<input style = "width : 260px; height : 40px" type="text" name="search" placeholder="Search.."> <img style = "float : right" src = "../images/radiosearch.png" height = "40px" width = "30px">
+			</div>
+		</div>
+	<footer>
+		<center> <p style ="font-size : 15px"> <b> Copyright &copy; From Venkata Rathnam Muralidharan @ 2017 </b> </p> </center>
+	</footer>
+	</div>
+	
+	</body>
+</html>

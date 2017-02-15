@@ -1,0 +1,247 @@
+body {
+    	background: url("../images/flag1.jpg");
+    	background-size:100%;
+    	background-repeat: repeat-y;
+    	background-attachment: fixed;
+    	height:1750px;
+	width:1300px;
+}
+.MainBox{
+	margin-left : 30px;
+	margin-right : 10px;
+	margin-top : 30px;
+	margin-bottom : 30px;
+ 	background-color: #F5F3EE;
+	height : 1750px;
+	width :  1200px;
+	border-style : solid;
+	border-width: 5px;
+	border-color: #F5F3EE;
+	border-radius: 25px;
+}
+.TopBox{
+	height : 250px;
+	width : 1200px;
+	background-color : #F5F3EE;
+	margin-top :0px;
+}
+.Logo{
+	margin-left : 20px;
+	height : 150px;
+	width : 100px;
+	float : left;
+}   
+.Title{
+	width : 1200px;
+	font-size : 20px;
+	height : 100px;
+	text-decoration : bold;
+}
+
+a{
+	text-decoration : none;
+}
+
+#loginpanel{display:block; position:relative; top:0;}
+#loginpanel ul{display:block; float:top; width:210px; height:20px; margin-left:160px; padding:6px 0 0 0; text-align:center; color:#CCCCCC; background-color:#313131;}
+#loginpanel li{display:block; height:20px; margin:0; padding:0;}
+#loginpanel li.left{float:left; text-align:right; padding-left:10px; background:url("images/tab_l.gif") no-repeat bottom left;}
+#loginpanel li.right{float:right; text-align:left; padding-right:10px; background:url("images/tab_r.gif") no-repeat bottom right;}
+#loginpanel a{display:block; width:100px;}
+
+input[type=text]{
+	border : 2px solid black;
+	border-radius : 6px;
+	height : 20px;
+	background-color : white;
+}
+
+input[type=password]{
+	border : 2px solid black;
+	border-radius : 6px;
+	height : 20px;
+	background-color : white;
+}
+
+input[type=submit]{
+	background: #B9DFFF;
+	color: #fff;
+	border: 1px solid #eee;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px #eee;
+	height : 30px;
+	width : 70px;
+}
+
+input[type=submit]:hover {
+	background: #016ABC;
+	color: #fff;
+	border: 1px solid #eee;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px #eee;
+}
+
+input[type=reset]{
+	background: #B9DFFF;
+	color: #fff;
+	border: 1px solid #eee;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px #eee;
+	height : 30px;
+	width : 70px;
+}
+
+input[type=reset]:hover {
+	background: #016ABC;
+	color: #fff;
+	border: 1px solid #eee;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px #eee;
+}
+
+.LoginBox{
+	float : right;
+	margin-left : 500px;
+	height : 20px;
+	width : 600px;
+}
+
+#topnav{
+	height:50px; 
+	width : 1200px;
+	margin-top : 80px;
+}
+
+#topnav ul{
+	display:block; 
+	width:100%; 
+	height:75px; 
+	margin:0; 
+	padding:0; 
+	list-style:none;
+	float : left;
+}
+
+#topnav ul li ul{
+	display:none;
+}
+
+#topnav ul li.active ul{
+	display:block; 
+	position:absolute; 
+	top:35px; 
+	left:0; 
+	width:100%; 
+	height:40px;
+}
+
+#topnav li{
+	display:block; 
+	float:left;
+}
+
+#topnav li.last{
+	margin-right:0;
+}
+
+#topnav ul li a:link, #topnav ul li a:visited, #topnav ul li a:hover{
+	display:block; 
+	float:left; 
+	height:25px;
+	width : 170px; 
+	padding:10px 15px 0 15px; 
+	color:#333333;
+	background-color:#E5E2C9;
+}
+
+#topnav ul ul li a:link, #topnav ul ul li a:visited, #topnav ul ul li a:hover{
+	float:left;
+	height:auto;
+	margin:5px 5px 0 0; 
+	padding:0 16px 0 0; 
+	color:#FFFFFF; 
+	background-color:#591434; 
+	border-right:1px solid #FFFFFF;
+}
+
+#topnav ul ul li.last a{
+	margin-right:0; 
+	padding:0;
+	border-right:none;
+}
+
+#topnav ul li.active a, #topnav ul li a:hover{	
+	color:#FFFFFF; 
+	background-color:#591434;
+}
+
+#placeholderdiv{
+	height : 300px;
+	width : 900px;
+	margin-left : 30px;
+}
+
+#Intro{
+	height : 300px;
+	width : 900px;
+	color : black;
+	background-color: #F5F3EE;
+}
+
+.Points{
+	margin-left : 30px;
+	height : 550px;
+	width : 1200px;
+}
+
+#Frame1{
+	float : left;
+	height : 440px;
+	width :230px;
+	border-style : solid;
+	border-width : 4px;
+	border-color : #591434;
+
+	-webkit-transition: width 2s;
+	transition : width 2s;
+}
+
+#Frame1:hover{
+	width : 300px;
+	background-color : #67BCDB;
+	color :#FFFFFF;
+}
+
+.endSection{
+	margin-left : 30px;
+	margin-right : 30px;
+	margin-bottom : 30px;
+	height : 350px;
+	width : 1100px;
+	background-color : #E5E2C9;
+	border-radius : 25px;
+}
+
+#quickLinks{
+	font-size : 20px;
+	color : black;
+	margin-left : 30px;
+	height : 300px;
+	width : 300px;
+	float : left;
+}
+
+#StayInTouch{
+	margin-left : 75px;
+	height : 300px;
+	width : 300px;
+	float : left;
+}
+
+#AboutUs{
+	margin-left : 30px;
+	height : 300px;
+	width : 300px;
+	float : left;
+	font-size : 20px;
+}
